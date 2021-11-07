@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <title>add parametrs </title>
+</head>
+<body>
+<h1>form add a parameter </h1>
+<form action="#" th:action="@{/addparameters}" th:object="${parameter}" method="post">
+    <p>
+        name :
+        <input type="text" th:field="*{id}"/>
+
+    </p>
+
+    <p>
+        value
+        <input type="text" th:field="*{value}"/>
+
+    </p>
+
+    <p>
+        <input type="submit" value="Submit"/>
+
+        <input type="reset" value="Rest"/>
+    </p>
+</form>
+
+</body>
+</html>

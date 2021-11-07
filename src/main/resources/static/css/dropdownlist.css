@@ -1,0 +1,38 @@
+a{
+
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 10px;
+    text-align: center;
+    display: block;
+    margin: 0.5px 0.5px;
+}
+
+ul li{
+    list-style: none;
+    position:relative;
+}
+ul li.sub-menu:before{
+    content: '\f0d7';
+    font-family: fontAwesome;
+    position: absolute;
+    line-height: 50px;
+
+    right: 5px;
+}
+
+ul li ul{
+    position: absolute;
+    left: 0;
+    display: none;
+}
+
+ul li:hover ul{
+    display: block;
+}
+ul li ul li{
+    left: 300px;
+    display: block;
+    width: 500px;
+}

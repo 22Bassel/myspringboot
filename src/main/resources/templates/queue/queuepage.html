@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <title>log in </title>
+
+</head>
+<body>
+<h1>SEND MASSAGE TO B </h1>
+<form action="#" th:action="@{/for_queue/send}" th:object="${orderStatus}" method="post">
+    <p>
+        email :
+        <input type="text" th:field="*{email}"/>
+
+    </p>
+
+    <p>
+        Date :
+        <input type="text" th:field="*{date}"/>
+
+    </p>
+
+    <p>
+        message :
+        <input type="text" th:field="*{message}"/>
+
+    </p>
+
+    <p>
+        <input type="submit" value="Send"/>
+
+        <input type="reset" value="Rest"/>
+    </p>
+</form>
+
+</body>
+</html>

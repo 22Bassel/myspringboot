@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <title>log in </title>
+
+    <link rel="stylesheet" href="/css/dropdownlist.css" />
+</head>
+<body>
+<h1>form sell a car </h1>
+
+<p>
+    <ul>
+        <li><a href="#" class="sub-menu">test</a>
+             <ul>
+                <li th:each="car : ${allcars}">
+                    <form action="#" th:action="@{/showsellcar(id=${car.id})}" method="post">
+
+                        <a>
+                    <input  type="submit" value="Sell" th:text="'   name: '+${car.name}+' ,Expected price: '+${car.price} + ' ,seatnumber: '+${car.seatnumber}"  />
+
+                        </a>
+                        </form>
+
+
+                </li>
+             </ul>
+        </li>
+    </ul>
+
+    </p>
+
+
+</body>
+</html>

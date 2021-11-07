@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html
+       xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <title> welcome </title>
+    <link rel="stylesheet" href="/css/astyle.css" />
+    <link rel="stylesheet" href="/css/mainPstyle.css" />
+
+</head>
+<body>
+<p>
+    car dealership center
+</p>
+
+<ul>
+    <li><a th:href="@{/showadduser}">add user</a></li>
+    <li><a th:href="@{/showeditaparameter}">edit a parameter</a></li>
+    <li><a th:href="@{/showaddaparameter}">add a parameter</a></li>
+    <li><a th:href="@{/showdelcar}">delete a car</a></li>
+    <li><a th:href="@{/showeditecar}">edit a car</a></li>
+    <li><a th:href="@{/showaddcar}">add a new car</a></li>
+    <li><a th:href="@{/viewcars2sell}">view cars to sell</a></li>
+    <li><a th:href="@{/for_queue/}">send to b app </a></li>
+</ul>
+
+</body>
+</html>

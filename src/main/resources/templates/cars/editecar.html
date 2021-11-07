@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <title>edite car</title>
+</head>
+<body>
+<h1>form edite a car </h1>
+<form action="#" th:action="@{/checkeditcar}"  th:object="${car}" method="post">
+    <p>
+        id :
+        <input type="text" th:field="*{Id}"/>
+      </p>
+
+    <p>
+        name :
+        <input type="text" th:field="*{name}"/>
+
+    </p>
+
+    <p>
+        price :
+        <input type="text" th:field="*{price}"/>
+
+    </p>
+
+    <p>
+        seat number :
+        <input type="text" th:field="*{seatnumber}"/>
+
+    </p>
+
+
+    <p>
+        <input type="submit" value="Edite"/>
+
+        <input type="reset" value="Rest"/>
+    </p>
+</form>
+
+</body>
+</html>
